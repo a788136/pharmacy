@@ -1,0 +1,209 @@
+
+.header2-container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #6700e7;
+    position: sticky;
+    top: 0;
+    z-index: 998;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.header2-inner{
+    display: flex;
+    align-items: center;
+    width: 1500px;
+    height: 80px;
+    background-color: #6700e7;
+    position: sticky;
+}
+
+.logo-img{
+    height: 70px;
+}
+
+.logo-text{
+    color: #fff;
+    font-family: BPG Mrgvlovani;
+    margin-left: 20px;
+}
+
+.mwvane-text{
+    font-size: 16px;
+}
+
+.aftiaqi-text {
+    font-size: 24px;
+}
+
+.dropdown-menu2 {
+    position: absolute;
+    /* width: calc(100% + 20px); */
+    top: 100%;
+    /* Позиция под кнопкой */
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    /* Центрирование по горизонтали и подъем вниз */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    /* Чтобы меню было выше других элементов */
+    opacity: 1;
+    visibility: visible;
+    /* Начальное состояние скрыто */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Плавный переход */
+}
+
+.catalog-links {
+    font-family: BPG Mrgvlovani;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.dropdown-toggle2 {
+    height: 52px;
+    border: 1px solid #33b933;
+    border-radius: 6px;
+    background: none;
+    margin-left: 40px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    background-color: #33b933;
+    padding-left: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.dropdown-toggle2:hover {
+    background-color: #008600;
+    border: 1px solid #008600;
+}
+
+.tabs-container {
+    display: flex;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    /* Ширина для категорий */
+}
+
+.tab-button {
+    width: 300px;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    gap: 10px;
+    border-radius: 4px;
+    transition: 0.2s ease-in-out;
+}
+
+.tab-button:hover {
+    background-color: #f7f5fa;
+}
+
+.tab-button.active {
+    background-color: #33b933;
+    /* Цвет для активной категории */
+    color: #fff;
+}
+
+.tab-content {
+    padding-left: 20px;
+    background-color: #fff;
+    width: 870px;
+    /* Ширина для текстов */
+}
+
+.category-tabs-title{
+    font-family: BPG Mrgvlovani;
+    line-height: 1.2;
+    font-size: 13px;
+}
+
+.category-tabs-img{
+    width: 16px;
+}
+
+.category-tabs-img path {
+    fill: #33b933;
+    /* Исходный цвет */
+}
+
+/* Активное состояние */
+.category-tabs-img-active path {
+    fill: #fff;
+    /* Цвет для активного состояния */
+}
+
+.test path{
+    fill: #33b933;
+}
+
+.tab-content-heading{
+    margin-top: 8px;
+    display: flex;
+    gap: 15px;
+}
+
+.tab-content-title{
+    
+    font-family: BPG Mrgvlovani;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tab-content-category-list{
+    margin-top: 30px;
+}
+
+.category-block{
+    width: 110px;
+}
+
+.cat-img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 7px solid #e3d5f5;
+}
+
+.cat-img:hover{
+    border: 7px solid #6700e7;
+    transform: scale(1.05);
+}
+
+.catalog__item-title{
+    font-family: BPG Mrgvlovani;
+        line-height: 1.4;
+        font-size: 10px;
+        font-weight: 600;
+        text-align: center;
+        color: #232749;
+}
+
+.tab-content-category-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}

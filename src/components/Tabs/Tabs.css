@@ -1,0 +1,32 @@
+.tabs-container {
+    display: flex;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    /* Ширина для категорий */
+}
+
+.tab-button {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.tab-button.active {
+    background-color: #6700e7;
+    /* Цвет для активной категории */
+    color: #fff;
+}
+
+.tab-content {
+    padding: 20px;
+    background-color: #fff;
+    width: 70%;
+    /* Ширина для текстов */
+    border-left: 1px solid #ccc;
+}

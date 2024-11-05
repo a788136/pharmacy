@@ -1,0 +1,145 @@
+.modal {
+    position: relative;
+    /* Другие стили для модального окна */
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Полупрозрачный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 600px;
+    position: relative;
+    
+}
+
+
+.close-button {
+    position: absolute;
+    top: -25px;
+    /* Сдвиг кнопки вверх за границу окна */
+    right: -25px;
+    /* Сдвиг кнопки вправо за границу окна */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button svg {
+    width: 24px;
+    height: 24px;
+    stroke: white;
+    /* Цвет линии SVG */
+}
+
+.close-button:hover svg {
+    stroke: #ccc;
+    /* Цвет при наведении */
+}
+
+.email-modal-title{
+    font-family: BPG Mrgvlovani;
+    font-size: 18px;
+    color: #001a4d;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.email-modal-text{
+    font-family: BPG Mrgvlovani;
+    font-size: 14px;
+    color: #001a4d;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.email-modal-text-p{
+    font-family: BPG Mrgvlovani;
+    font-size: 14px;
+    color: #001a4d;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.email-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-label{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.email-input {
+    font-family: BPG Mrgvlovani;
+    font-size: 14px;
+    color: #001a4d;
+    font-weight: 400;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ddd4e8;
+    padding-left: 5px;
+    height: 30px;
+    transition: 0.2s ease-in-out;
+    
+}
+
+.email-input:focus {
+    border: 1px solid #001a4d;  
+}
+
+.email-text-area {
+    font-family: BPG Mrgvlovani;
+    font-size: 14px;
+    color: #001a4d;
+    font-weight: 400;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ddd4e8;
+    padding-left: 5px;
+    height: 100px;
+    transition: 0.2s ease-in-out;
+}
+
+.email-text-area:focus {
+    border: 1px solid #001a4d;
+}
+
+.email-submit-btn{
+    font-family: BPG Mrgvlovani;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    background-color: #001a4d;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.email-submit-btn:hover {
+    background-color: #000c24;
+}

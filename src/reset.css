@@ -1,0 +1,90 @@
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    /* Увеличение межстрочного интервала */
+    -webkit-text-size-adjust: 100%;
+    /* Запрет увеличения шрифта на мобильных устройствах */
+}
+
+body {
+    font-family: sans-serif;
+    /* Задаем шрифт по умолчанию */
+    font-size: 16px;
+    /* Задаем размер шрифта по умолчанию */
+    line-height: 1.5;
+    /* Увеличиваем межстрочный интервал для улучшения читаемости */
+    color: #333;
+    /* Основной цвет текста */
+    /* background-color: #ffffff00; */
+    /* Цвет фона */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    /* Сбрасываем стандартное начертание */
+}
+
+ul,
+ol {
+    list-style: none;
+    /* Убираем маркеры у списков */
+}
+
+img {
+    max-width: 100%;
+    /* Ограничиваем максимальную ширину изображений */
+    height: auto;
+    /* Сохраняем пропорции изображений */
+}
+
+table {
+    border-collapse: collapse;
+    /* Убираем промежутки между ячейками */
+    border-spacing: 0;
+    /* Убираем отступы между ячейками */
+}
+
+/* Убираем стандартный стиль кнопок и ссылок */
+button,
+a {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    /* Унаследуем цвет текста */
+    cursor: pointer;
+    /* Курсор указателя для кнопок */
+}
+
+/* Добавляем стандартные стили для форм */
+input,
+textarea,
+select {
+    font-family: inherit;
+    /* Унаследуем шрифт */
+    font-size: inherit;
+    /* Унаследуем размер шрифта */
+    line-height: inherit;
+    /* Унаследуем межстрочный интервал */
+    margin: 0;
+    /* Убираем отступы */
+    padding: 0;
+    /* Убираем внутренние отступы */
+}
+
+/* Сброс для SVG */
+svg {
+    display: block;
+}
