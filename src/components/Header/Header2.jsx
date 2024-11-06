@@ -5,6 +5,7 @@ import tabContentCategoryImg1 from "../../assets/icons/category_icon-1.svg"
 import cat1 from "../../assets/img/category-zabolevanie1.webp"
 import { Link } from 'react-router-dom';
 
+
 const Header2 = () => {
     const [showDropdown, setShowDropdown] = useState(false);
     const [activeTab, setActiveTab] = useState(1);
@@ -16,6 +17,8 @@ const Header2 = () => {
     const handleTabClick = (tabIndex) => {
         setActiveTab(tabIndex);
     };
+
+    
 
     return (
         <div className='header2-container'>
@@ -136,10 +139,16 @@ const Header2 = () => {
                                 {activeTab === 1 && 
                                 <Link to="cat1">
                                     <div className="tab-content-inner">
-                                        <div className="tab-content-heading">
-                                            <img src={tabContentCategoryImg1} alt="" />
-                                            <h2 className='tab-content-title'>მცენარეები და ჩაები</h2>
+                                        <div className="tan-catalog-header">
+                                            <div className="tab-content-heading">
+                                                <img src={tabContentCategoryImg1} alt="" />
+                                                <h2 className='tab-content-title'>მცენარეები და ჩაები</h2>
+                                            </div>
+                                            <Link to="./">
+                                                <p className='catalog-category-all'>ყველას ნახვა</p>
+                                            </Link>
                                         </div>
+                                        
                                         <div className="tab-content-category-list">
                                             <div className="category-block">
                                                 <img className='cat-img' src={cat1} alt="" />
